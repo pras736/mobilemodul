@@ -1,4 +1,4 @@
-package com.example.tio_3tic.pertemuan_5
+package com.example.tio_3tic.Home.pertemuan_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tio_3tic.R
 import com.example.tio_3tic.databinding.ActivityLimaBinding
-import com.example.tio_3tic.databinding.ActivityLoginBinding
 
 class limaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLimaBinding
