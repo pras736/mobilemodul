@@ -14,6 +14,7 @@ import com.example.tio_3tic.Home.pertemuan_6.EnamActivity
 import com.example.tio_3tic.LoginActivity
 import com.example.tio_3tic.R
 import com.example.tio_3tic.databinding.FragmentHomeBinding
+import com.example.tio_3tic.pertemuan9.NineActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -94,6 +95,11 @@ class HomeFragment : Fragment() {
         binding.btnp6.setOnClickListener {
 //            val intent = Intent(this@, MainActivity::class.java)
             val intent = Intent(requireContext(), EnamActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnp9.setOnClickListener {
+//            val intent = Intent(this@, MainActivity::class.java)
+            val intent = Intent(requireContext(), NineActivity::class.java)
             startActivity(intent)
         }
     }
