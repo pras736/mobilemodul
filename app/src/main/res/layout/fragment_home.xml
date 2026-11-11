@@ -120,6 +120,18 @@
             app:layout_gravity="fill_horizontal" />
 
         <Button
+            android:id="@+id/btnp11"
+            android:layout_width="93dp"
+            android:layout_height="40dp"
+            android:text="pertemuan 11"
+            android:textColor="#C84D4D"
+            app:layout_columnWeight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnp6"
+            app:layout_gravity="fill_horizontal" />
+
+        <Button
             android:id="@+id/btnkembali"
             android:layout_width="124dp"
             android:layout_height="42dp"
@@ -138,13 +150,10 @@
         android:id="@+id/btnlogout"
         android:layout_width="117dp"
         android:layout_height="35dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="140dp"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
