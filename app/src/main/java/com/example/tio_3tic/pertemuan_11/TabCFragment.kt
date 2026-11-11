@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tio_3tic.R
 import com.example.tio_3tic.databinding.FragmentHomeBinding
 import com.example.tio_3tic.databinding.FragmentTabCBinding
@@ -92,9 +93,9 @@ class TabCFragment : Fragment() {
         }
         binding.rvProducts.apply {
 // Mode Grid 2 kolom
-            layoutManager = GridLayoutManager(requireContext(), 2)
+//            layoutManager = GridLayoutManager(requireContext(), 2)
 // Jika ingin mode Linear:
-// layoutManager = LinearLayoutManager(requireContext())
+ layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
             adapter = productAdapter
         }
     }
