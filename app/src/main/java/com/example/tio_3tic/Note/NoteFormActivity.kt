@@ -34,7 +34,6 @@ class NoteFormActivity : AppCompatActivity() {
             setDisplayShowHomeEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_arrow_back)
         }
-        db = AppDatabase.getInstance(this)
         binding.btnSaveNote.setOnClickListener {
             val title = binding.etTitle.text.toString().trim()
             val content = binding.etContent.text.toString().trim()
@@ -56,23 +55,8 @@ class NoteFormActivity : AppCompatActivity() {
                     Toast.makeText(
                         this@NoteFormActivity,
                         "Gagal menyimpan catatan",
-                        Toast.LENGTH_SHORT)
-                }
-                binding.btnSaveNote.isEnabled = false
-                lifecycleScope.launch {
-                    try {
-                        db.noteDao().insert(
-                            NoteEntity(title = title, content = content)
-                        )
-                        finish()
-                    } catch (e: Exception) {
-                        binding.btnSaveNote.isEnabled = true
-                        Toast.makeText(
-                            this@NoteFormActivity,
-                            "Gagal menyimpan catatan",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
