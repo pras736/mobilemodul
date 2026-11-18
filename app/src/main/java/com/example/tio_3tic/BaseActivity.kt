@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.tio_3tic.Home.HomeFragment
 import com.example.tio_3tic.Message.MessageFragment
 import com.example.tio_3tic.More.MoreFragment
+import com.example.tio_3tic.Note.NoteFragment
 import com.example.tio_3tic.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -42,6 +43,11 @@ class BaseActivity : AppCompatActivity() {
 
                 R.id.more -> {
                     replaceFragment(MoreFragment())
+                    true
+                }
+
+                R.id.note -> {
+                    replaceFragment(NoteFragment())
                     true
                 }
 
